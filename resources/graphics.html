@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>      
+    <title>New developer  website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="leading-8 dark:text-white overfow-x-hidden font-Outfit bg:darkTheme">
+    
+    <!-----<div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./images/header-img.aif"  alt="backround-color-images" class="w-full">
+    </div>--->
+    <!------navbar and nav menu at the  top -->
+    <nav class="fixed w-full px-5 lg:px-8 xl:px-[8%] py-4 
+    flex items-center justify-between z-50 hover:bg-[#f4cfff]">
+        <img src="images/hollatec logo.PNG" style="border:1px solid green; border-radius:50%;" height="100" width="100" alt="logo"
+        class="border border-green-900 cursor-pointer w-28 mr-14">
+        <ul id="extra" class="items-center hidden gap-6 px-12 py-3 bg-white bg-opacity-50 rounded-full shadow-sm md:flex lg:gap-8 font-Ovo">
+<!-----Nav items to navigate the page-->
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#service">services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            
+            <!----toggel control and  theme---->
+        </ul>
+        <div class="flex items-center gap-4">
+            <button class ="bg-gradient-to-r from-[#b820e6]
+        to-[#da7d20]"onclick="toggleTheme()"><img src="./images/sun.png" alt=""
+            class="w-5"></button>
+        <a id="you" href="#contact" class="items-center hidden gap-3 px-10 lg:flex py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo">
+            Contact <img src="images/arrow-d-black.png" alt="arrow"
+            class="w-3 bg-gradient-to-r from-[#b820e6]
+        to-[#da7d20]"></a>
+            <button class="block ml-3 md:hidden"  onclick="openMenu()">
+                <img src="images/bars-black.png" alt="" class="w-6">
+            </button>
+        </div>
+
+<!----mobile menu------>
+<ul id="sideMenu" 
+class="fixed top-0 bottom-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 md:hidden -right-64 bg-rose-50 font-Ovo">
+
+    <div class="absolute right-6 top-6" onclick="closeMenu()">
+    <img src="images/delete-black.png" alt="icon" class="w-5 cursor-pointer dark:block">
+    </div>
+    <!-----mobile side nav items -->
+      <li><a href="#top" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+      <li><a href="#service" onclick="closeMenu()">services</a></li>
+      <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+    </ul>
+        
+    </nav>
+
+<!----header----------->
+    
+       
+<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4" style="padding-top:250px;">
+<img src="./images/abey.jpg" height="50" width="50" alt="" class="rounded-full w-32">
+    <h3 id="extra2" class="flex items-center gap-3 mb-1 text-xl md:text-2xl font-Ovo">Hi! I'm Olakunle <img src="./images/clap.png" alt="hand-icon" class="w-6"></h3>
+      <h1 id="extrat3" class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Frontend Web developer based in Nigeria</h1>
+      <p id="extrat" class="mx-auto max-w-2x">I am a Frontend developer from Nigeria, Lagos with 5 years of experience
+          in multiple companines like Microsoft, Tesla and Apple
+      </p>
+    <div class="flex flex-col items-center gap-4 mt-4 sm:flex-row" >
+        <!---- To donwload the  CV ------->
+        <a href="./images/logo.png" download
+        class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6]
+        to-[#da7d20] text-white flex items-center gap-2">Contact me<img src="./images/arrow-r-black.png" alt="" class="w-4"></a>
+        <!-------move to the contact directly-->
+        <a href="#contact"
+        class="flex items-center gap-2 px-10 py-3 text-white border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] boader-gray-500"> My resume<img src="./images/downloads.png" alt="" class="w-4"></a>
+        
+    </div>
+</div>
+<!----graphics -->
+<script src="./script.js"></script>
+</body>
+</html>
